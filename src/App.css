@@ -10,6 +10,7 @@
   max-width: 1200px;
 }
 
+
 .app {
   width: 100%;
   min-height: 100vh;
@@ -17,6 +18,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 /* Qora overlay */
 .app::before {
