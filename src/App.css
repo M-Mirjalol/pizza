@@ -33,7 +33,7 @@ body {
   background: transparent;
 }
 
-/* BUTUN SAYT UCHUN UMUMIY RESTORAN FONI */
+
 .app::before {
   content: "";
   position: fixed;

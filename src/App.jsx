@@ -4,6 +4,7 @@ import "./App.css"
 import Header from './Components/Header/Header'
 import Hero from "./Components/Hero/Hero"
 import About from './Components/About/About'
+import Map from './Components/Map/Map'
 const App = () => {
   return (
    <div
@@ -13,6 +14,8 @@ const App = () => {
      <Header/>
      <Hero/>
      <About/>
+     <Map/>
+     
     </div>
   )
 }
