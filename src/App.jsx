@@ -3,7 +3,7 @@ import bgImages from "./assets/restaran.jpg"
 import "./App.css"
 import Header from './Components/Header/Header'
 import Hero from "./Components/Hero/Hero"
-
+import About from './Components/About/About'
 const App = () => {
   return (
    <div
@@ -12,6 +12,7 @@ const App = () => {
     >
      <Header/>
      <Hero/>
+     <About/>
     </div>
   )
 }

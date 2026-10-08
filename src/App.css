@@ -1,38 +1,63 @@
-*{
+
+* {
   margin: 0;
   padding: 0;
   list-style: none;
   box-sizing: border-box;
 }
-.container{
+
+html,
+body,
+#root {
+  min-height: 100%;
+  background: #0a0504;
+}
+
+body {
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  max-width: 1200px;
 }
 
-
+/* BUTUN SAYT */
 .app {
+  position: relative;
+  isolation: isolate;
   width: 100%;
   min-height: 100vh;
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: transparent;
 }
-/* Qora overlay */
+
+/* BUTUN SAYT UCHUN UMUMIY RESTORAN FONI */
 .app::before {
   content: "";
-  position: absolute;
+  position: fixed;
   inset: 0;
+  z-index: -1;
+  pointer-events: none;
 
-  background: rgba(0, 0, 0, 0.75);
+  background:
+    linear-gradient(
+      180deg,
+      rgba(8, 2, 2, 0.86) 0%,
+      rgba(8, 2, 2, 0.82) 30%,
+      rgba(8, 2, 2, 0.91) 70%
+    ),
+    url("./assets/restaran.jpg") center / cover no-repeat;
+}
 
+/* Kontent fon ustida */
+.content {
+  position: relative;
   z-index: 1;
 }
 
-/* Sayt kontenti overlay ustida turadi */
-.content {
-  position: relative;
-  z-index: 2;
+/* Barcha sectionlarda umumiy fon ko'rinsin */
+.content section {
+  background-color: transparent;
 }
